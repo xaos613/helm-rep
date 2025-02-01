@@ -3,7 +3,17 @@ entries:
   first-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-01T12:53:55.01207144Z"
+    created: "2025-02-01T15:12:01.900321138Z"
+    description: A Helm chart for Kubernetes
+    digest: f9c8a331227f70e077d48e22fe6389836954e28f44214c18bb6453341fee40ac
+    name: first-app
+    type: application
+    urls:
+    - https://xaos613.github.io/helm-rep/release/first-app-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-02-01T15:12:01.899686609Z"
     description: A Helm chart for Kubernetes
     digest: 9892bb5dee1288f3de4beb86188ad3119ca9a8c8e8499a163577ef49d3a2d405
     name: first-app
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://xaos613.github.io/helm-rep/release/first-app-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-01T12:53:55.01129217Z"
+generated: "2025-02-01T15:12:01.898984159Z"

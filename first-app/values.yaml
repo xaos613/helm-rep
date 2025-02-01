@@ -73,6 +73,12 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
+
+pvc:
+  storage_class: nfs-app
+  storage_size: 100Mi    
+
+
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
@@ -104,7 +110,11 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: []
+volumes:
+  - name: persistent-storage
+    persistentVolumeClaim:
+      claimName: pv-claim-helm
+
 # - name: foo
 #   secret:
 #     secretName: mysecret
@@ -112,6 +122,9 @@ volumes: []
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: []
+volumeMounts:
+  - name: persistent-storage
+    mountPath: "/var/www/html"
 # - name: foo
 #   mountPath: "/etc/foo"
 #   readOnly: true
