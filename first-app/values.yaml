@@ -121,10 +121,9 @@ volumes:
 #     optional: false
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
 volumeMounts:
   - name: persistent-storage
-    mountPath: "/var/www/html"
+    mountPath: "/usr/share/nginx/html"
 # - name: foo
 #   mountPath: "/etc/foo"
 #   readOnly: true
