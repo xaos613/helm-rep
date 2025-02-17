@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jenkins-config
+  namespace: {{ .Values.jenkins.namespace }}
+data:
+  jenkins.yaml: |
+    jenkins:
+      numExecutors: {{ .Values.jenkins.numExecutors }}
+      clouds:
+      - kubernetes:
+          containerCapStr: "10"
+          maxRequestsPerHostStr: "32"
+          jenkinsUrl: "http://jenkins:{{ .Values.jenkins.servicePort }}"
+          name: "kubernetes"
+          namespace: "{{ .Values.jenkins.namespace }}"
+          skipTlsVerify: true
+    unclassified:
+      location:
+        adminAddress: {{ .Values.jenkins.adminEmail | quote }}
+        url: "http://{{ .Values.jenkins.ingress.host }}/"
+      shell:
+        shell: "/bin/bash"
+
+

@@ -1,0 +1,39 @@
+{{- if .Values.jenkins.ingress.enabled -}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "jenkins.fullname" . }}
+  namespace: {{ .Values.jenkins.namespace }}
+  labels:
+    {{- include "jenkins.labels" . | nindent 4 }}
+  {{- with .Values.jenkins.ingress.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  {{- with .Values.jenkins.ingress.className }}
+  ingressClassName: {{ . }}
+  {{- end }}
+  {{- if .Values.jenkins.ingress.tls }}
+  tls:
+    {{- range .Values.jenkins.ingress.tls }}
+    - hosts:
+        {{- range .hosts }}
+        - {{ . | quote }}
+        {{- end }}
+      secretName: {{ .secretName }}
+    {{- end }}
+  {{- end }}
+  rules:
+    - host: {{ .Values.jenkins.ingress.host }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: jenkins
+                port:
+                  number: {{ .Values.jenkins.ingress.servicePort }}
+
+{{- end }}

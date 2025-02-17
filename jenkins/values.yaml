@@ -1,0 +1,38 @@
+jenkins:
+  namespace: ci-cd-helm
+  appName: jenkins
+  image:
+    repository: jfrog.it-academy.by/public/jenkins-ci
+    tag: sholom
+    pullPolicy: IfNotPresent
+
+  resources:
+    requests:
+      cpu: 2
+      memory: 2Gi
+    limits:
+      cpu: 3
+      memory: 3Gi
+
+  persistence:
+    nfs:
+      server: 192.168.37.105
+      path: /mnt/IT-Academy/nfs-data/sa2-30-24/sholomitski_d/jenkins
+
+  ingress:
+    enabled: true
+    className: nginx
+    host: jenkins.k8s-19.sa
+    servicePort: 8080
+
+
+adminUser: admin
+adminEmail: xaos613@gmail.com
+adminPassword: bXlfcGFzcw==
+
+numExecutors: 2
+
+service:
+  port: 8080
+slave:
+  port: 50000
