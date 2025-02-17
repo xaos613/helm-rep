@@ -3,22 +3,33 @@ entries:
   first-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-01T15:12:01.900321138Z"
+    created: "2025-02-17T22:56:32.931546748+03:00"
     description: A Helm chart for Kubernetes
-    digest: f9c8a331227f70e077d48e22fe6389836954e28f44214c18bb6453341fee40ac
+    digest: 73f380a6495cc2ef6f9607bf4ab4754d41fd30202fefa0a39f37a62bce2eb85a
     name: first-app
     type: application
     urls:
-    - https://xaos613.github.io/helm-rep/release/first-app-0.2.0.tgz
+    - https://github.com/xaos613/helm-rep/release/first-app-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-01T15:12:01.899686609Z"
+    created: "2025-02-17T22:56:32.929964713+03:00"
     description: A Helm chart for Kubernetes
     digest: 9892bb5dee1288f3de4beb86188ad3119ca9a8c8e8499a163577ef49d3a2d405
     name: first-app
     type: application
     urls:
-    - https://xaos613.github.io/helm-rep/release/first-app-0.1.0.tgz
+    - https://github.com/xaos613/helm-rep/release/first-app-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-01T15:12:01.898984159Z"
+  jenkins-helm:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-17T22:56:32.928484258+03:00"
+    description: A Helm chart for Jenkins CI/CD
+    digest: fe126bcb3692f5800dc19bb813cc5ccecb16071313e2671d0003de640f29fa93
+    name: jenkins-helm
+    type: application
+    urls:
+    - https://github.com/xaos613/helm-rep/jenkins-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-02-17T22:56:32.927359287+03:00"
