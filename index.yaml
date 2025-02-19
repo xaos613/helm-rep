@@ -3,44 +3,44 @@ entries:
   first-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-17T23:14:02.156731464+03:00"
+    created: "2025-02-19T20:38:20.125521829+03:00"
     description: A Helm chart for Kubernetes
     digest: 73f380a6495cc2ef6f9607bf4ab4754d41fd30202fefa0a39f37a62bce2eb85a
     name: first-app
     type: application
     urls:
-    - https://github.com/xaos613/helm-rep/release/first-app-0.2.0.tgz
+    - https://xaos613.github.io/helm-rep/release/first-app-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-17T23:14:02.155255076+03:00"
+    created: "2025-02-19T20:38:20.120884194+03:00"
     description: A Helm chart for Kubernetes
     digest: 9892bb5dee1288f3de4beb86188ad3119ca9a8c8e8499a163577ef49d3a2d405
     name: first-app
     type: application
     urls:
-    - https://github.com/xaos613/helm-rep/release/first-app-0.1.0.tgz
+    - https://xaos613.github.io/helm-rep/release/first-app-0.1.0.tgz
     version: 0.1.0
   jenkins:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-02-17T23:14:02.152740747+03:00"
+    created: "2025-02-19T20:38:20.117620629+03:00"
     description: A Helm chart for Jenkins CI/CD
     digest: d33fa7d1cac17456e6f34490383d848405fe52a90330e25bb55a954fe0496707
     name: jenkins
     type: application
     urls:
-    - https://github.com/xaos613/helm-rep/jenkins-0.2.0.tgz
+    - https://xaos613.github.io/helm-rep/jenkins-0.2.0.tgz
     version: 0.2.0
   jenkins-helm:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-02-17T23:14:02.153658062+03:00"
+    created: "2025-02-19T20:38:20.118861264+03:00"
     description: A Helm chart for Jenkins CI/CD
     digest: fe126bcb3692f5800dc19bb813cc5ccecb16071313e2671d0003de640f29fa93
     name: jenkins-helm
     type: application
     urls:
-    - https://github.com/xaos613/helm-rep/jenkins-helm-0.1.0.tgz
+    - https://xaos613.github.io/helm-rep/jenkins-helm-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-17T23:14:02.151482619+03:00"
+generated: "2025-02-19T20:38:20.116110076+03:00"
