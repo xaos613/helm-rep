@@ -26,9 +26,9 @@ jenkins:
     servicePort: 8080
 
 
-adminUser: admin
-adminEmail: xaos613@gmail.com
-adminPassword: bXlfcGFzcw==
+  adminUser: admin
+  adminEmail: xaos613@gmail.com
+  adminPassword: bXlfcGFzcw==
 
 numExecutors: 2
 
