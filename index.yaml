@@ -3,7 +3,7 @@ entries:
   first-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-20T10:22:05.059657817+03:00"
+    created: "2025-02-20T10:33:16.602090817+03:00"
     description: A Helm chart for Kubernetes
     digest: 73f380a6495cc2ef6f9607bf4ab4754d41fd30202fefa0a39f37a62bce2eb85a
     name: first-app
@@ -13,7 +13,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-20T10:22:05.058106267+03:00"
+    created: "2025-02-20T10:33:16.600425383+03:00"
     description: A Helm chart for Kubernetes
     digest: 9892bb5dee1288f3de4beb86188ad3119ca9a8c8e8499a163577ef49d3a2d405
     name: first-app
@@ -24,7 +24,17 @@ entries:
   jenkins:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-02-20T10:22:05.056663932+03:00"
+    created: "2025-02-20T10:33:16.598974904+03:00"
+    description: A Helm chart for Jenkins CI/CD
+    digest: f704abb1cd3b12e8e2bcec54a7987df41dea1ff3ddcbb9f10cad5cc0da55966c
+    name: jenkins
+    type: application
+    urls:
+    - https://xaos613.github.io/helm-rep/jenkins-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-20T10:33:16.598115464+03:00"
     description: A Helm chart for Jenkins CI/CD
     digest: ebfb1b01163a07cf6f7b3edea2229553577f779157ca85263bc69eb1218a9878
     name: jenkins
@@ -34,7 +44,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-02-20T10:22:05.055653506+03:00"
+    created: "2025-02-20T10:33:16.597222792+03:00"
     description: A Helm chart for Jenkins CI/CD
     digest: d33fa7d1cac17456e6f34490383d848405fe52a90330e25bb55a954fe0496707
     name: jenkins
@@ -42,4 +52,4 @@ entries:
     urls:
     - https://xaos613.github.io/helm-rep/jenkins-0.2.0.tgz
     version: 0.2.0
-generated: "2025-02-20T10:22:05.054443285+03:00"
+generated: "2025-02-20T10:33:16.596082162+03:00"

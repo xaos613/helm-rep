@@ -30,6 +30,13 @@ jenkins:
   adminEmail: xaos613@gmail.com
   adminPassword: bXlfcGFzcw==
 
+
+secret:
+  name: jenkins-secret
+  password: bXlfcGFzcw==
+  type: Opaque
+
+
 numExecutors: 2
 
 service:
